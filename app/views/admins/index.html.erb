@@ -1,0 +1,8 @@
+<% if current_admin %>
+    <div id="wrapper">
+        <%= render "shared/navbar" %>
+    </div>
+<% else %>
+    <%= link_to 'Signup', '/signup'%><br>
+    <%= link_to 'Login', '/login'%>
+<% end %>
